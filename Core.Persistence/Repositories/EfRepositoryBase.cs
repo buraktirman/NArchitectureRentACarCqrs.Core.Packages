@@ -149,7 +149,7 @@ public class EfRepositoryBase<TEntity, TEntityId, TContext>
     )
     {
         IQueryable<TEntity> queryable = Query();
-        if (!enableTracking) //Navigation property'lerini tracking etmemesi için
+        if (!enableTracking) //Navigation property'lerini track etmemesi için
             queryable = queryable.AsNoTracking();
         if (withDeleted) //Silinmiş verileri de getirmesi için global query filter'ı kapatıyoruz
             //Global query filter ile silinmiş verileri varsayılan olarak getirmiyoruz.

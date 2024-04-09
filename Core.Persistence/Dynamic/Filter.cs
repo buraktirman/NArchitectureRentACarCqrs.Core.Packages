@@ -6,7 +6,7 @@ public class Filter
     public string Operator { get; set; } //Filtre operatörü (=, >, <, içinde geçen(contains) vs.)
     public string? Value { get; set; } //Filtre değeri
     public string? Logic { get; set; } //Filtre mantıksal operatörü (and, or, vs.)
-    public IEnumerable<Filter>? Filters { get; set; } //Diğer filtreler
+    public IEnumerable<Filter>? Filters { get; set; } //Diğer filtreler (opsiyonel)
 
     public Filter()
     {
